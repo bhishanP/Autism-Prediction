@@ -12,8 +12,6 @@ This repository contains a machine learning project aimed at classifying individ
 - [Modeling](#modeling)
 - [Deployment](#deployment)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Dataset
 
@@ -95,3 +93,10 @@ The best model is deployed using a Flask application:
 To run the Flask app locally:
 ```bash
 python app.py
+```
+## Results
+![image](https://github.com/user-attachments/assets/8b3550a0-5c94-45c7-9c55-9af78291e8aa)
+![image](https://github.com/user-attachments/assets/8d485166-0117-4388-ae0f-a08401588e83)
+![image](https://github.com/user-attachments/assets/da65d20d-4ae3-4429-97ef-544eef8908b9)
+
+
