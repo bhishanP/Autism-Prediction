@@ -4,14 +4,16 @@ This repository contains a machine learning project aimed at classifying individ
 
 ## Table of Contents
 
-- [Dataset](#dataset)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Data Preprocessing](#data-preprocessing)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-- [Modeling](#modeling)
-- [Deployment](#deployment)
-- [Results](#results)
+- [Autism Screening Classification](#autism-screening-classification)
+  - [Table of Contents](#table-of-contents)
+  - [Dataset](#dataset)
+  - [Project Structure](#project-structure)
+  - [Installation](#installation)
+  - [Data Preprocessing](#data-preprocessing)
+  - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+  - [Modeling](#modeling)
+  - [Deployment](#deployment)
+  - [Results](#results)
 
 ## Dataset
 
@@ -20,18 +22,23 @@ The dataset used in this project is available on Kaggle: [Autism Screening Datas
 ## Project Structure
 ```
 Autism_Screening_Classification
-│
-├── Autism_Data.csv  # Dataset file
-│
-├── Data_explore.ipynb         # Jupyter notebook for EDA
-├── model.ipynb           # Jupyter notebook for model building
-├── app.py            # Flask application for model deployment
-│
-│
-├── sample_input.json      # Sample input data for the Flask app
-├── best_model.pkl         # Trained model file
-├── README.md              # Project README file
-└── LICENSE                # Project license file
+.
+├── app.py              # Main Flask application for predictions
+├── data/               # Stores raw and processed datasets
+│   ├── Autism_Data.csv
+│   └── Autism_Data_visual.csv
+├── models/             # Contains trained machine learning models
+│   └── best_model.pkl
+├── notebooks/          # Jupyter notebooks for exploration, training, and visualization
+│   ├── Data_explore.ipynb
+│   ├── model.ipynb
+│   └── Visual.ipynb
+├── templates/          # HTML templates for the web application
+│   └── index.html
+├── LICENSE             # Project license
+├── README.md           # This README file
+├── sample_input.json
+└── requirements.txt
 
 ```
 ## Installation
@@ -45,12 +52,12 @@ Autism_Screening_Classification
 2. Create a virtual environment and activate it:
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    venv\Scripts\activate    # On Linux: source venv/bin/activate
     ```
 
 3. Install the required packages:
     ```bash
-    pip install flask
+    pip install -r requirements.txt
     ```
 
 ## Data Preprocessing

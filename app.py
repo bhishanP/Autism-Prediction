@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load('best_model.pkl')
+model = joblib.load('models/best_model.pkl')
 
 # Initialize LabelEncoders
 label_encoders = {}
